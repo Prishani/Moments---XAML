@@ -118,7 +118,7 @@ namespace Moments
 				
 				CrossSettings.Current.AddOrUpdateValue<string> ("profileImage", User.ProfileImage);
 				CrossSettings.Current.AddOrUpdateValue<string> ("profileName", User.Name);
-                //test
+                //t
 				// Store token / credentials
 				await BlobCache.LocalMachine.InsertObject <string> ("authenticationToken", AccountService.Instance.AuthenticationToken,
 					DateTimeOffset.Now.AddDays (30));
